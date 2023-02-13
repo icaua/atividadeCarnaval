@@ -5,11 +5,11 @@
     src: url(fontes/computer-font.ttf);
 }
 body{
-    background: #928e8e;
+    background: #000;
 }
 
 #interface{
-    background: #505152;
+    background: #221E1D;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -509,7 +509,7 @@ fieldset{
 
 
 #xbox2 h1{
-    font-family: ps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2em;
     color: #9bc848;
     text-align: center;
@@ -552,7 +552,7 @@ fieldset{
 }
 
 #xbox h1{
-    font-family: ps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2em;
     color: #9bc848;
     text-align: center;
