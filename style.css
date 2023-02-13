@@ -1,0 +1,570 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: ps;
+    src: url(fontes/computer-font.ttf);
+}
+body{
+    background: #928e8e;
+}
+
+#interface{
+    background: #505152;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#topo{
+    height: 130px;
+
+}
+
+#menu{
+    display: block;
+    position: absolute;
+    width: 800px;
+    top: 105px;
+    left:550px ;
+    z-index: 1;
+}
+
+#menu ul{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2em;
+    margin: 0px;
+    padding: 0px;
+}
+#menu li{
+    float: left;
+    background: #000000;
+}
+
+#menu li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0px;
+    display: block;
+    padding: 5px 25px;
+}
+
+#menu li a:hover{
+    background: #fff;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+        
+}
+
+#menu li ul{
+    display: none;
+    font-size: 1.2em;
+
+}
+#menu li:hover ul{
+    display: block;
+    position: relative;
+
+}
+#menu li:hover li{
+    float: none;
+}
+
+/* banner */
+
+#anime1, #anime2{
+    max-width: 1200px;
+    height: auto;
+
+}
+
+#banner_anime{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 346px;
+    margin: 0px;
+}
+
+#banner_anime img{
+    position: absolute;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear; /* ease, linear, ease*/
+}
+
+#anime1, #anime2:hover{
+    opacity: 1;
+}
+
+#anime1:hover, #anime2{
+    opacity: 0;
+
+}
+
+#cards{
+    position: relative;
+    max-width: 1200px;
+    height: auto;
+    left: 15px;
+}
+
+.card{
+    float: left;
+    width: 360px;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.card h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #9bc848;
+    font-size: 1.7em;
+
+}
+
+.card p{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    padding: 0px 10px;
+    text-indent: 20px;
+    color: #000;
+}
+
+.card a{
+    text-decoration: none;
+    background: #9bc848;
+    font-size: 1.1em;
+    padding: 5px 30px;
+    color: #000;
+    border-radius: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card a:hover{
+    background: #67852f;
+    columns: #fff;
+    
+}
+#rodape{
+    clear: both;
+    border-top: 2px solid #9bc848;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#rodape a{
+    text-decoration: none;
+}
+
+/* FIM DA PAGINA INDEX */
+
+/* Inicio da pagina ps */
+#ps {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    float: left;
+    padding: 10px 20px;
+
+}
+
+#lateral {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    float: right;
+    padding: 10px 0px;
+    margin-top: -300px;
+    padding-right: 20px;
+
+
+}
+
+#lateral img{
+    border-radius: 25px;
+}
+
+
+#ps h1{
+    font-family: ps;
+    font-size: 2em;
+    color: #4169e1;
+    text-align: center;
+
+}
+
+#ps p{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    text-indent: 20px;
+}
+
+
+/* ps2 */
+
+#ps2 {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    float: right;
+    padding: 10px 20px;
+
+}
+
+#lateral2 {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    float: left;
+    padding: 10px 0px;
+    margin-top: -300px;
+    padding-left: 20px;
+
+
+}
+
+#lateral2 img{
+    border-radius: 25px;
+}
+
+#ps2 h1{
+    font-family: ps;
+    font-size: 2em;
+    color: #4169e1;
+    text-align: center;
+
+}
+
+#ps2 p{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    text-indent: 20px;
+}
+
+
+
+
+/* Pagina fotos */
+
+#album_fotos{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    list-style: none;
+
+}
+
+#album_fotos li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #9bc848;
+    background-color: #fff;
+    -webkit-transition: all .4s ease-out;
+
+}
+
+#album_fotos li .galeria{
+    opacity: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    font-size: 0.9em;
+    line-height: 370px;
+    padding: 5px;
+
+}
+
+#album_fotos li:hover .galeria{
+    opacity: 1;
+    
+}
+
+#album_fotos .foto01{
+    background: url(imagens/galeria1.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album_fotos .foto01:hover{
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+
+}
+
+#album_fotos .foto02{
+    background: url(imagens/galeria2.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album_fotos .foto02:hover{
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+    
+}
+
+#album_fotos .foto03{
+    background: url(imagens/galeria3.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album_fotos .foto03:hover{
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+    
+}
+
+#album_fotos .foto04{
+    background: url(imagens/galeria4.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album_fotos .foto04:hover{
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+    
+}
+
+#album_fotos .foto05{
+    background: url(imagens/galeria5.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album_fotos .foto05:hover{
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+    
+}
+
+#album_fotos .foto06{
+    background: url(imagens/galeria6.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+#album_fotos .foto06:hover{
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+    
+}
+
+#album_fotos li:hover{
+    -webkit-transform: scale(1.5);
+
+}
+
+#galeria2{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 430px;
+}
+
+#galeria_foto{
+    list-style: none;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#galeria_foto li{
+    display: block;
+    float: left;
+    margin: 5px ;
+    position: relative;
+
+}
+
+#galeria_foto img{
+    background: #fff;
+    border: 1px solid #9bc848;      
+    padding: 5px;
+    width: 200px;
+    height: 165px;
+
+}
+
+.aumentar:hover{
+    -webkit-transform: scale(1.5);
+    z-index: 2;
+}
+
+h1.foto{
+    color: #fff;
+    text-align: center;
+    font-family: ps;
+    font-size: 2.5em;
+}
+
+p.p_foto{
+    color: #fff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2;
+
+}
+
+/* pagina de audio e video */
+
+#radio_tv{
+    width: 75%;
+    height: 580px;
+    background: url(imagens/radio-tv.png)no-repeat;
+    margin: 5px auto;
+
+}
+
+#musica{
+    display: block;
+    position: relative;
+    top: 490px;
+    left: 575px;
+
+}
+
+#filme{
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 80px;
+    width: 460px;
+    height: 270px;
+
+}
+
+/* formulario */
+
+form{
+    width: 900px;
+    margin: auto;
+}
+
+input, textarea{
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(255, 255, 255, 0.603);
+}
+
+legend{
+    color: rgb(116, 92, 252);
+    margin: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+fieldset{
+    border-color: rgb(110, 106, 106);
+    margin: 20px;
+}
+
+#sexo{
+    width: 150px;
+}
+
+.usuario{
+    background: url("imagens/icone-contato.png") no-repeat 95% 95% ;
+    
+}
+
+.endereco{
+    background: url("imagens/icone-endereco.png") no-repeat 95% 95% ;
+}
+
+.mensagem{
+    background: url("imagens/icone-mensagem.png") no-repeat 95% 95% ;
+}
+
+.pedido{
+    background: url("imagens/ipgto.png") no-repeat 95% 95% ;
+}
+
+/* Inicio da pagina xbox2 */
+#xbox2 {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    float: left;
+    padding: 10px 20px;
+
+}
+
+#lateralx2 {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    float: right;
+    padding: 10px 0px;
+    margin-top: -300px;
+    padding-right: 20px;
+
+
+}
+
+
+#xbox2 h1{
+    font-family: ps;
+    font-size: 2em;
+    color: #9bc848;
+    text-align: center;
+
+}
+
+#xbox2 p{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    text-indent: 20px;
+}
+
+
+/* xbox */
+
+#xbox {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    float: right;
+    padding: 10px 20px;
+
+}
+
+#lateralx {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    float: left;
+    padding: 10px 0px;
+    margin-top: -300px;
+    padding-left: 20px;
+
+
+}
+
+#lateralx img{
+    border-radius: 50%;
+}
+
+#xbox h1{
+    font-family: ps;
+    font-size: 2em;
+    color: #9bc848;
+    text-align: center;
+
+}
+
+#xbox p{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    text-indent: 20px;
+}
+
+
+

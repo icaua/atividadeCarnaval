@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <title>Formulário</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+     <div id="interface">
+
+        <header id="topo">
+            <img src="imagens/banner-topo.jpg" alt="logo do site">
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">consoles</a>
+                        <ul>
+                            <li><a href="ps.html"> PS </a></li>
+                            <li><a href="xbox.html"> Xbox </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"> galerias </a>
+                    <ul>
+                        <li><a href="fotos.html"> fotos </a></li>
+                        <li><a href="videos.html"> videos </a></li>
+                    </ul>
+                </li>
+                    <li><a href="contatos.html"> Contatos </a></li>
+                </ul>
+
+            </nav>
+
+        </header>
+        <section id="banner_anime">
+            <img  src="imagens/banner1.jpg" alt="god of war " id="anime1">
+            <img src="imagens/banner2.jpg" alt="god of war " id="anime2">
+
+        </section>
+
+         <form action="">
+              <fieldset class="usuario">
+                   <legend>
+                       Identificação do Usuário
+                   </legend>
+                         <p>
+                             <label for="cnome"> Nome: </label>
+                             <input type="text" name="tNome" id="cnome" size="20" maxlength="20" placeholder="Nome Completo" autofocus required>
+                         </p>
+                         <p>
+                             <label for="csenha">Senha:</label>
+                             <input type="password" name="tSenha" id="csenha" placeholder="8 Dígitos" size="8" maxlength="8" required>
+                   </p>
+                   <p>
+                       <label for="cemail">Email:</label>
+                       <input type="email" name="tEmail" id="cemail" size="30" maxlength="30" placeholder="Digite seu e-mail" required>
+                   </p>
+                   <fieldset>
+                       <legend>Sexo</legend>
+
+                         <input type="radio" name="tSexo" id="cmasc">
+                         <label for="cmasc"> Masculino </label>
+
+                         <input type="radio" name="tSexo" id="cfem">
+                         <label for="cfem"> Feminino </label>
+
+                         <input type="radio" name="tSexo" id="cpref">
+                         <label for="cpref"> Prefiro não dizer </label>
+                   </fieldset>
+                    
+                     <p>
+                          <label for=""> Data de Nascimento:</label>
+                          <input type="date" name="tnasc" id="cnasc">
+                     </p>
+
+              </fieldset>
+              <fieldset class="endereco">
+                  <legend> Endereço do Usuário </legend>
+                  <p>
+                      <label for="crua">Logadouro: </label>
+                      <input type="text" name="tRua" id="crua" size="30" maxlength="30" placeholder="Av., Rua, Trav, ...">
+                  </p>
+                  <p>
+                      <label for="cnum">Número</label>
+                      <input type="number" name="tNum" id="cnum" min="0" max="99999">
+                  </p>
+                  <p>
+                      <label for="cest">Estado:</label>
+                      <select name="" id="">
+                          <optgroup label="Região Sudeste">
+                              <option value="SP"> São Paulo </option>
+                              <option value="RJ"> Rio de Janeiro </option>
+                              <option value="MG"> Minas Gerais </option>
+                              <option value="ES"> Espírito Santo </option>
+                          </optgroup>
+                          <optgroup label="Região Sul">
+                                <option value="SC"> Santa Catarina </option>
+                                <option value="PR"> Paraná </option>
+                                <option value="RS"> Rio Grande do Sul </option>
+                              </label>
+                          </optgroup>
+                      </select>
+                  </p>
+
+                  <p>
+                      <label for="ccid">Cidade:</label>
+                      <input type="text" name="tCid" id="ccid" size="40" maxlength="40" placeholder="Sua Cidade">
+                  </p>
+              </fieldset>
+
+              <fieldset class="mensagem">
+                  <legend> Mensagem do usuario </legend>
+                  <p>
+                      <label for="curg">Grau de Urgência:</label>
+                      Min
+                      <input type="range" name="tUrg" id="curg" min="0" max="10" step="1">
+                      Max
+                  </p>
+
+                  <p>
+                      <label for="cmsg">Mensagem:</label></p>
+                      <p>
+                          <textarea name="tMsg" id="cmsg" cols="45" rows="5"></textarea>
+                      </p>
+              </fieldset>
+
+              <fieldset class="pedido">
+                  <legend> Quero um Console </legend>
+                  <p>
+                      <input type="checkbox" name="tPed" id="cped" checked>
+                      <label for="cped"> Gostaria de adquirir um console quando disponível</label>
+                  </p>
+                  <p>
+                      <label for="ccon"> Console:</label>
+                      <select name="tGame" id="ccon">
+                          <option value="PS"> Playstation</option>
+                          <option value="Xbox"> Xbox Série X</option>
+                          <option value="Nitendo">Nitendo Switch</option>
+                      </select>
+                  </p>
+                  <p>
+                      <label for="ccor"> Cor:</label>
+                      <input type="color" name="tCor" id="ccor" value="#000FFF">
+                  </p>
+                  <p>
+                      <label for="cqtde"> Qtde: </label>
+                      <input type="number" name="tQtede" id="cqtde" min="0" max="5">
+                  </p>
+                  <p>
+                      <label for="ctot"> Preço Total</label>
+                      <input type="text" name="tTot" id="ctot" placeholder="Total a pagar" readonl>
+                  </p>
+
+              </fieldset>
+              <input type="button" value="Enviar">
+         </form>
+         
+        <footer id="rodape">
+            <p>Somente para fins educativos</p>
+            <p>
+                <a target="_blank" href="https://www.instagram.com/"> <img src="imagens/instagram.png" alt=""></a>
+                <a target="_blank" href="https://pt-br.facebook.com/"> <img src="imagens/facebook.png" alt=""></a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=fIiH4XqW_CE"><img src="imagens/youtube.png" alt=""></a>
+                <a target="_blank" href="https://twitter.com"><img src="imagens/twitter.png" alt=""></a>
+            </p>
+        </footer>
+     </div>
+
+</body>
+</html>
